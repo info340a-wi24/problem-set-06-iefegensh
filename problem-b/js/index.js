@@ -1,6 +1,7 @@
 'use strict';
 
 //Create a variable `form` that refers to the `<form>` element in the DOM.
+let form = document.querySelector('form');
 
 /* Add an event listener to the `form` element that will listen for `'submit'` 
 type events (which occur when the form is submitted). In the callback function 
@@ -23,7 +24,7 @@ for this event listener, do the following:
      correctness. "was-checked" would be a better classname, but Bootstrap 
      doesn't use that.
 */
-
+form.addEventListener('submit', preventDefault);
 
 
 /* You should now be able to submit the form and see it highlight fields that 
